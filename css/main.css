@@ -1,0 +1,73 @@
+html{
+  box-sizing: border-box;
+}
+
+*, *::before, *::after{
+  box-sizing: inherit;
+}
+img{
+
+}
+.robot{
+  position: relative;
+  width:320px;
+  margin: 0 auto;
+}
+.body{
+  width: 320px;
+  display:block;
+  top:40px;
+
+
+}
+.brain{
+  width: 46px;
+  top: 1em;
+  position:absolute;
+  left: 8.5em;
+
+
+}
+.headleft{
+  width: 125px;
+  bottom:0;
+  top:-2.5em;
+  left:2.2em;
+  position:absolute;
+  transition: all 200ms linear;
+
+}
+.headright{
+  width: 125px;
+  bottom:0;
+  right:2.2em;
+  top:-2.5em;
+  margin:0;
+  position: absolute;
+  transition: all 200ms linear;
+}
+h1{
+  text-align:center;
+  background-color:blue;
+  padding:0;
+  margin:0;
+  width:100%;
+  display:block;
+  font-family: 'Anton', sans-serif;
+  font-size:5rem;
+}
+header{
+  background-color:navy;
+  position:relative;
+  padding:1em;
+  display:block;
+  margin:0 auto;
+  width: 100%;
+
+}
+header:hover .headright{
+  right:12px;
+}
+header:hover .headleft{
+  left:12px;
+}
